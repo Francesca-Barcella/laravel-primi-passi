@@ -27,7 +27,7 @@ Route::get('/team', function () {
     $data_staff = [
         'title_page' => 'our team',
         'subtitle_page' => 'presentazione del nostro team',
-        'name' => [
+        'staffs' => [
             'Francesca',
             'Sarra',
             'Yuri',

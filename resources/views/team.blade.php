@@ -25,6 +25,15 @@
         <div class="container">
             <h3>{{$title_page}}</h3>
             <p>{{$subtitle_page}}</p>
+            <div class="staff">
+                <ul>
+                    @foreach($staffs as $staff)
+                    <li>
+                        {{$staff}}
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
 
 
         </div>
