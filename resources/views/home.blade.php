@@ -13,8 +13,10 @@
 <body>
   <header>
     <nav class="nav justify-content-center">
-      <a class="nav-link active" href="/">Home</a>
-      <a class="nav-link" href="/about">About</a>
+      <!-- a class="nav-link active" href="/">Home</a> -->
+      <a class="nav-link active" href="{{ route ('home') }}">Home</a>
+      <!-- <a class="nav-link" href="/about">About</a> -->
+      <a class="nav-link" href="{{ route ('about') }}">About</a>
       <!-- <a class="nav-link" href="/team">Team</a> -->
       <a class="nav-link" href="{{ route ('team') }}">Team</a>
     </nav>

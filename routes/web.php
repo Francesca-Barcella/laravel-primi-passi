@@ -17,11 +17,11 @@ Route::get('/', function () {
     $page_title = "Laravel world";
     $hello_message = "Ready to start!";
     return view('home', compact('page_title', 'hello_message'));
-});
+})->name('home');
 
 Route::get('/about', function () {
     return view('about');
-});
+})->name('about');
 
 Route::get('/team', function () {
     $data_staff = [
