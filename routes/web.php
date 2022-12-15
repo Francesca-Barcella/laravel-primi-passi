@@ -24,7 +24,14 @@ Route::get('/about', function () {
 });
 
 Route::get('/team', function () {
-    return view('team');
-});
-
-
+    $data_staff = [
+        'title_page' => 'our team',
+        'subtitle_page' => 'presentazione del nostro team',
+        'name' => [
+            'Francesca',
+            'Sarra',
+            'Yuri',
+        ]
+    ];
+    return view('team', $data_staff);
+})->name('team');

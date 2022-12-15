@@ -15,11 +15,17 @@
         <nav class="nav justify-content-center">
             <a class="nav-link active" href="/">Home</a>
             <a class="nav-link" href="/about">About</a>
-            <a class="nav-link" href="/team">Team</a>
+            <!-- <a class="nav-link" href="/team">Team</a> -->
+            <a class="nav-link" href="{{ route ('team') }}">Team</a>
         </nav>
     </header>
     <main>
-    <h1>team page</h1>
+        <div class="container">
+            <h3>{{$title_page}}</h3>
+            <p>{{$subtitle_page}}</p>
+
+
+        </div>
     </main>
 
 </body>
