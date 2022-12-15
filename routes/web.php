@@ -14,7 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $page_title = "Laravel world";
+    $hello_message = "Ready to start!";
+    return view('home', compact('page_title', 'hello_message'));
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/team', function () {
+    return view('team');
 });
 
 

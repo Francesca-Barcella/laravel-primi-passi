@@ -12,16 +12,16 @@
 
 <body>
     <header>
-    <nav class="nav justify-content-center">
-      <a class="nav-link active" href="/">Home</a>
-      <a class="nav-link" href="/about">About</a>
-      <a class="nav-link" href="/team">Team</a>
-    </nav>
+        <nav class="nav justify-content-center">
+            <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link" href="/about">About</a>
+            <a class="nav-link" href="/team">Team</a>
+        </nav>
     </header>
+    <main>
+    <h1> page about</h1>
+    </main>
 
-
-    <h1>{{$page_title}}</h1>
-    <h3>{{$hello_message}}</h3>
 </body>
 
 </html>
