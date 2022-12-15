@@ -31,7 +31,8 @@ Route::get('/team', function () {
             'Francesca',
             'Sarra',
             'Yuri',
-        ]
+        ],
+        'mails' => []
     ];
     return view('team', $data_staff);
 })->name('team');

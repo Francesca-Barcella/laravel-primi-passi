@@ -26,6 +26,7 @@
             <h3>{{$title_page}}</h3>
             <p>{{$subtitle_page}}</p>
             <div class="staff">
+                <p><strong>Staff</strong></p>
                 <ul>
                     @foreach($staffs as $staff)
                     <li>
@@ -33,6 +34,21 @@
                     </li>
                     @endforeach
                 </ul>
+            </div>
+
+            <div class="staff_2">
+                <p><strong>mails</strong></p>
+                @if(count($mails) > 0)
+                <ul>
+                    @foreach($mails as $mail)
+                    <li>
+                        {{$mail}}
+                    </li>
+                    @endforeach
+                </ul>
+                @else
+                <p>no mails</p>
+                @endif
             </div>
 
 
