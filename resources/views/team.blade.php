@@ -12,14 +12,14 @@
 
 <body>
     <header>
-        <nav class="nav justify-content-center">
-            <!-- a class="nav-link active" href="/">Home</a> -->
-            <a class="nav-link active" href="{{ route ('home') }}">Home</a>
-            <!-- <a class="nav-link" href="/about">About</a> -->
-            <a class="nav-link" href="{{ route ('about') }}">About</a>
-            <!-- <a class="nav-link" href="/team">Team</a> -->
-            <a class="nav-link" href="{{ route ('team') }}">Team</a>
-        </nav>
+    <nav class="nav justify-content-center">
+      <!-- a class="nav-link active" href="/">Home</a> -->
+      <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'bg-primary text-dark' : ''}}" href="{{ route ('home') }}">Home</a>
+      <!-- <a class="nav-link" href="/about">About</a> -->
+      <a class="nav-link {{ Route::currentRouteName() === 'about' ? 'bg-primary text-dark' : ''}}" href="{{ route ('about') }}">About</a>
+      <!-- <a class="nav-link" href="/team">Team</a> -->
+      <a class="nav-link {{ Route::currentRouteName() === 'team' ? 'bg-primary text-dark' : ''}}" href="{{ route ('team') }}">Team</a>
+    </nav>
     </header>
     <main>
         <div class="container">
